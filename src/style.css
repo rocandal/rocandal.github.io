@@ -1,0 +1,358 @@
+@font-face {
+  font-family: 'HeirofLightBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/HeirofLightBold.woff')
+    format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HeirofLightRegular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/HeirofLightRegular.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+  src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix')
+      format('embedded-opentype'),
+    url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff')
+      format('woff'),
+    url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf')
+      format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+img,
+picture,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+  border: 0 none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+svg {
+  display: block;
+}
+
+label {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  line-height: 1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: 'HeirofLightRegular', sans-serif;
+  background: url('../public/img/D1/background.jpg') repeat;
+  /* background: #fbfbfb; */
+  /* background: url(img/D1/background_1.jpg) repeat; */
+}
+
+:root {
+  /* font-size */
+  --text-xs: 0.75rem;
+  /* 12 */
+  --text-s: 0.875rem;
+  /* 14 */
+  --text-default: 1rem;
+  /* 16 */
+  --text-m: 1.25rem;
+  /* 20 */
+  --text-l: 1.5rem;
+  /* 24 */
+  --text-xl: 1.875rem;
+  --text-2xl: 3rem;
+  /* 60 */
+
+  /* color */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #c0c0c0;
+  --color-gray2: #858585;
+  --color-yellow: #ffcd6a;
+  --color-brown: #3b332b;
+  --color-black2: #1a1a1a;
+}
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  height: 75px;
+  padding: 0 1rem;
+  width: 100%;
+  z-index: 9999;
+}
+
+.inner {
+  max-width: 1920px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+header .header_right {
+  display: flex;
+  color: var(--color-gray);
+  font-size: var(--text-m);
+}
+
+header nav {
+  margin: 0 2rem;
+  cursor: pointer;
+}
+
+header nav::after {
+  content: '';
+  display: block;
+  width: 0%;
+  margin: 4px auto;
+  border-bottom: 2px solid var(--color-black);
+  transition: width 0.4s ease; /* 애니메이션 추가 */
+}
+
+header nav:hover::after {
+  width: 75%;
+  border-bottom: 2px solid var(--color-yellow);
+}
+
+main {
+  margin-top: 75px;
+  min-width: 1920px;
+}
+
+main .inner {
+  flex-direction: column;
+}
+
+section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main_slider {
+  position: relative;
+}
+
+.slide_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.count {
+  width: 100%;
+  min-width: 1920px;
+  padding: 0 70px;
+}
+
+.count_list li {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 10rem 0;
+  margin: 5rem 0 15rem;
+}
+
+.count h3 {
+  color: var(--color-brown);
+  font-size: var(--text-xl);
+  margin-bottom: 4px;
+}
+
+.count_list h4 {
+  font-size: var(--text-2xl);
+  margin-bottom: 40px;
+}
+.count_list p {
+  font-size: var(--text-xl);
+}
+
+.count_list .img_sec {
+  position: relative;
+  z-index: 1;
+}
+
+.count_img {
+  border: 5px solid #fff;
+  border-radius: 6px;
+  max-width: 1280px;
+}
+
+.count_photo {
+  position: absolute;
+}
+
+.count_list li:nth-child(odd) .count_photo {
+  right: -200px;
+  bottom: -100px;
+}
+
+.count_list .text_sec {
+  flex: 1;
+}
+
+.count_list li:nth-child(odd) .text_sec img {
+  position: absolute;
+  right: 0;
+  bottom: 200px;
+  width: 900px;
+  height: 730px;
+}
+
+.count_list li:nth-child(odd) .text_sec .count_text {
+  position: absolute;
+  right: 70px;
+  bottom: 160px;
+  width: 270px;
+  text-align: center;
+  margin: 100px auto;
+  min-width: 260px;
+  color: var(--color-brown);
+}
+
+/* deco */
+
+.count_list .img_sec .deco + div:not(.deco) {
+  position: relative;
+}
+
+.count_list .deco {
+  position: absolute;
+}
+
+.count_list li:nth-child(odd) .deco1 {
+  left: -80px;
+  bottom: -200px;
+}
+
+.count_list li:nth-child(odd) .deco2 {
+  top: calc(10rem - 130px);
+  right: 0;
+}
+
+/* 짝수 */
+
+.count_list li:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.count_list li:nth-child(even) h3 {
+  text-align: right;
+}
+
+.count_list li:nth-child(even) .text_sec img {
+  position: absolute;
+  left: 0;
+  bottom: 200px;
+  width: 995px;
+  height: 917px;
+}
+
+.count_list li:nth-child(even) .text_sec .count_text {
+  position: absolute;
+  left: 70px;
+  bottom: 160px;
+  width: 270px;
+  text-align: center;
+  margin: 100px auto;
+  min-width: 260px;
+  color: var(--color-brown);
+}
+
+.count_list li:nth-child(even) .count_photo {
+  left: -170px;
+  bottom: -100px;
+}
+
+.count_list li:nth-child(even) .deco1 {
+  left: -40px;
+  bottom: -250px;
+}
+
+.count_list li:nth-child(even) .deco2 {
+  left: -40px;
+  top: 0;
+}
+
+.count_list li:nth-child(even) .deco3 {
+  left: 0;
+  bottom: 250px;
+}
+
+/* footer */
+
+footer {
+  font-family: 'NanumBarunGothic';
+  background: var(--color-black2);
+  color: var(--color-gray2);
+  padding: 80px 0;
+  text-align: center;
+}
+
+footer .inner {
+  display: flex;
+  flex-direction: column;
+}
+
+footer p + p {
+  margin-top: 40px;
+}
