@@ -1,6 +1,6 @@
 import './style.css';
 
-function App() {
+const App = () => {
   return (
     <div classNameName='App'>
       <header>
