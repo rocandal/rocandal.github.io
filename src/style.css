@@ -163,13 +163,12 @@ header nav::after {
   display: block;
   width: 0%;
   margin: 4px auto;
-  border-bottom: 2px solid var(--color-black);
+  border-bottom: 2px solid var(--color-yellow);
   transition: width 0.4s ease; /* 애니메이션 추가 */
 }
 
 header nav:hover::after {
   width: 75%;
-  border-bottom: 2px solid var(--color-yellow);
 }
 
 main {
@@ -188,21 +187,80 @@ section img {
 
 .visual {
   position: relative;
+  width: 100%;
+  height: 960px;
+  object-fit: cover;
+}
+
+.visual::after {
+  content: '';
+  position: absolute;
+  left: 65%;
+  bottom: 0;
+  display: block;
+  width: calc(671px * 2 / 3);
+  height: calc(1292px * 2 / 3);
+  background: url('../public/img/gabi.png') no-repeat center bottom/ contain;
+  opacity: 0;
+  transition: opacity 0.5s ease 1.1s, transform 0.5s ease 1.1s;
+  z-index: 1;
 }
 
 .visual_logo {
   position: absolute;
-  top: 60px;
+  top: 30px;
   left: 50%;
   transform: translateX(-50%) scale(0.9);
   opacity: 0;
   transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  z-index: 1;
 }
 
-.visual_logo.on {
+.visual_logo::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: -200px;
+  display: block;
+  width: calc(569px * 3 / 5);
+  height: calc(1321px * 3 / 5);
+  background: url('../public/img/haru.png') no-repeat center / cover;
+  opacity: 0;
+  transition: opacity 0.5s ease 0.7s, transform 0.5s ease 0.7s;
+}
+
+.visual_logo::after {
+  content: '';
+  position: absolute;
+  right: -450px;
+  bottom: -370px;
+  display: block;
+  width: calc(613px * 3 / 5);
+  height: calc(1313px * 3 / 5);
+  background: url('../public/img/shoushou.png') no-repeat center / cover;
+  opacity: 0;
+  transition: opacity 0.5s ease 0.9s, transform 0.5s ease 0.9s;
+}
+
+/* 'on' 상태일 때 애니메이션 */
+.visual.on .visual_logo {
   opacity: 1;
-  scale: 1;
   transform: translateX(-50%) translateY(100px) scale(1);
+}
+
+.visual.on::after {
+  opacity: 1;
+  transform: translateX(50px) scale(1);
+}
+
+.visual.on .visual_logo::before {
+  opacity: 1;
+  transform: translateX(-50px) scale(1);
+}
+
+.visual.on .visual_logo::after {
+  opacity: 1;
+  transform: translateX(50px) scale(1);
 }
 
 .count {
