@@ -127,10 +127,10 @@ body {
 }
 
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  background: #000;
+  width: 100%;
   height: 75px;
   padding: 0 1rem;
   width: 100%;
@@ -149,7 +149,7 @@ header {
 
 header .header_right {
   display: flex;
-  color: var(--color-gray);
+  color: var(--color-white);
   font-size: var(--text-m);
 }
 
@@ -173,7 +173,6 @@ header nav:hover::after {
 }
 
 main {
-  margin-top: 75px;
   min-width: 1920px;
 }
 
@@ -187,15 +186,23 @@ section img {
   object-fit: cover;
 }
 
-.main_slider {
+.visual {
   position: relative;
 }
 
-.slide_logo {
+.visual_logo {
   position: absolute;
-  top: 50%;
+  top: 60px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%) scale(0.9);
+  opacity: 0;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.visual_logo.on {
+  opacity: 1;
+  scale: 1;
+  transform: translateX(-50%) translateY(100px) scale(1);
 }
 
 .count {
@@ -280,13 +287,13 @@ section img {
 }
 
 .count_list li:nth-child(odd) .deco1 {
-  left: -80px;
-  bottom: -200px;
-}
-
-.count_list li:nth-child(odd) .deco2 {
   top: calc(10rem - 130px);
   right: 0;
+}
+
+.count_list li:nth-child(odd) .deco3 {
+  left: -80px;
+  bottom: -200px;
 }
 
 /* 짝수 */
@@ -325,17 +332,17 @@ section img {
 
 .count_list li:nth-child(even) .deco1 {
   left: -40px;
-  bottom: -250px;
-}
-
-.count_list li:nth-child(even) .deco2 {
-  left: -40px;
   top: 0;
 }
 
-.count_list li:nth-child(even) .deco3 {
+.count_list li:nth-child(even) .deco2 {
   left: 0;
   bottom: 250px;
+}
+
+.count_list li:nth-child(even) .deco3 {
+  left: -40px;
+  bottom: -250px;
 }
 
 /* footer */
