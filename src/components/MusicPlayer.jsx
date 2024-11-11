@@ -52,9 +52,9 @@ const MusicPlayer = () => {
   return (
     <div className="music_player">
       <div className="music_button_container">
-        <button onClick={handlePrevious}>&lt;</button>
+        <button onClick={handlePrevious}>◁</button>
         <button onClick={handlePlayPause}>{isPlaying ? '⏸︎' : '▶️'}</button>
-        <button onClick={handleNext}>&gt;</button>
+        <button onClick={handleNext}>▷</button>
       </div>
       {isPlaying ? (
         <div className="music_inform_container">

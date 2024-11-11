@@ -1,0 +1,19 @@
+.music_player {
+  display: flex;
+}
+
+.music_button_container > button {
+  color: var(--color-white);
+}
+
+.music_button_container > button:not(:first-child) {
+  margin-left: 16px;
+}
+
+.music_inform_container {
+  margin-left: 16px;
+}
+
+.music_inform_container > span:not(:first-child) {
+  margin-left: 8px;
+}
