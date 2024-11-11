@@ -23,7 +23,9 @@ const MusicPlayer = () => {
     if (isPlaying) {
       audioRef.current.pause();
     } else {
-      audioRef.current.play();
+      audioRef.current.play().catch((err) => {
+        console.error('수동 재생 에러: ', err);
+      });
     }
 
     setIsPlaying(!isPlaying);
@@ -44,7 +46,9 @@ const MusicPlayer = () => {
     audioRef.current.src = tracks[currentTrack].src;
 
     if (isPlaying) {
-      audioRef.current.play();
+      audioRef.current.play().catch((err) => {
+        console.error('자동 재생 에러: ', err);
+      });
     } else {
       audioRef.current.pause();
     }
