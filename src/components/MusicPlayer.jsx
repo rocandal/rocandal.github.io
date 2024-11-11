@@ -1,3 +1,4 @@
+import '../style/music.css';
 import { useEffect, useRef, useState } from 'react';
 
 const MusicPlayer = () => {
@@ -55,10 +56,12 @@ const MusicPlayer = () => {
         <button onClick={handlePlayPause}>{isPlaying ? '⏸︎' : '▶️'}</button>
         <button onClick={handleNext}>&gt;</button>
       </div>
-      <div className="music_inform_container">
-        <span> · </span>
-        <span>{isPlaying ? tracks[currentTrack].title : ''}</span>
-      </div>
+      {isPlaying ? (
+        <div className="music_inform_container">
+          <span> · </span>
+          <span>{tracks[currentTrack].title}</span>
+        </div>
+      ) : null}
     </div>
   );
 };
