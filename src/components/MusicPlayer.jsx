@@ -40,6 +40,7 @@ const MusicPlayer = () => {
   };
 
   useEffect(() => {
+    // 트랙 변경 시 오디오 소스 설정
     audioRef.current.src = tracks[currentTrack].src;
 
     if (isPlaying) {
@@ -47,7 +48,19 @@ const MusicPlayer = () => {
     } else {
       audioRef.current.pause();
     }
-  }, [currentTrack, isPlaying]);
+
+    // 노래 종료 시 다음 곡으로 변경
+    const handleTrackEnd = () => {
+      setCurrentTrack((curTrack) => (curTrack + 1) % tracks.length);
+      setIsPlaying(true);
+    };
+
+    audioRef.current.addEventListener('ended', handleTrackEnd);
+
+    return () => {
+      audioRef.current.removeEventListener('ended', handleTrackEnd);
+    };
+  }, [currentTrack, isPlaying, tracks]);
 
   return (
     <div className="music_player">
