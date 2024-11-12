@@ -1,5 +1,10 @@
 .music_player {
   display: flex;
+  width: 240px;
+}
+
+.music_button_container {
+  display: flex;
 }
 
 .music_button_container > button {
@@ -11,9 +16,26 @@
 }
 
 .music_inform_container {
-  margin-left: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  margin: auto 0 auto 16px;
 }
 
-.music_inform_container > span:not(:first-child) {
-  margin-left: 8px;
+.music_title {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+.music_title span {
+  padding-right: 40px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }

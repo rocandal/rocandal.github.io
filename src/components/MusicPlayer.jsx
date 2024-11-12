@@ -73,12 +73,16 @@ const MusicPlayer = () => {
         <button onClick={handlePlayPause}>{isPlaying ? '⏸︎' : '▶️'}</button>
         <button onClick={handleNext}>▷</button>
       </div>
-      {isPlaying ? (
-        <div className="music_inform_container">
-          <span> · </span>
-          <span>{tracks[currentTrack].title}</span>
+      <div className="music_inform_container">
+        <div className="music_title">
+          <span>
+            {isPlaying ? tracks[currentTrack].title : '재생 버튼을 눌러주세요.'}
+          </span>
+          <span>
+            {isPlaying ? tracks[currentTrack].title : '재생 버튼을 눌러주세요.'}
+          </span>
         </div>
-      ) : null}
+      </div>
     </div>
   );
 };
