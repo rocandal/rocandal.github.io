@@ -59,7 +59,6 @@ footer,
 header,
 hgroup,
 menu,
-nav,
 section,
 svg {
   display: block;
@@ -147,6 +146,10 @@ header {
   margin: auto;
 }
 
+.inner_header {
+  padding: 0 48px;
+}
+
 header .header_right {
   display: flex;
   color: var(--color-white);
@@ -154,6 +157,7 @@ header .header_right {
 }
 
 header nav {
+  display: flex;
   margin: 0 2rem;
   cursor: pointer;
 }
