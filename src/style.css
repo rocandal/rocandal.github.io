@@ -157,8 +157,7 @@ header .header_right {
 }
 
 header nav {
-  display: flex;
-  margin: 0 2rem;
+  margin: auto 2rem;
   cursor: pointer;
 }
 

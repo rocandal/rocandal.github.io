@@ -1,6 +1,7 @@
 .music_player {
   display: flex;
   width: 240px;
+  padding-bottom: 6px;
 }
 
 .music_button_container {
@@ -9,6 +10,7 @@
 
 .music_button_container > button {
   color: var(--color-white);
+  padding-bottom: 4px;
 }
 
 .music_button_container > button:not(:first-child) {
