@@ -5,7 +5,7 @@ const countItems = [
     title: '세기말마크 3,4,5기',
     countImage: 'img/count/count14_1.png',
     countPhoto: '',
-    name: '[세기말마크]',
+    name: '[로제라]',
     description: '황금에도 마크 같이.. 해줄 거지?',
     date: '2024-11-19',
   },
@@ -56,7 +56,7 @@ const countItems = [
   },
   {
     index: 6,
-    title: '하랴@톤베리',
+    title: '하랴@톤베리 | 커미션 ⓒ민규(@GGU524)',
     countImage: 'img/count/count11_1.png',
     countPhoto: 'img/photo/photo11_1.png',
     name: '[하루]',
@@ -114,7 +114,7 @@ const countItems = [
     title: '룬아루@톤베리',
     countImage: 'img/count/count14_1.png', // 일러 없음
     countPhoto: 'img/photo/photo8_1.png',
-    name: '[웅니의 룬아루]',
+    name: '[룬아루]',
     description: '',
     date: '2024-11-25',
   },
@@ -133,7 +133,7 @@ const countItems = [
     countImage: 'img/count/count7_1.png',
     countPhoto: 'img/photo/photo7_1.png',
     name: '[꼬질]',
-    description: '7황금 와도 놀아주겠따고 약소캐...',
+    description: '황금 와도 놀아주겠따고 약소캐...',
     date: '2024-11-26',
   },
   {
@@ -175,7 +175,7 @@ const countItems = [
   },
   {
     index: 19,
-    title: '슈슈@펜리르',
+    title: '슈슈@펜리르 | 커미션 ⓒ익명',
     countImage: 'img/count/count14_1.png', // 일러 없음
     countPhoto: 'img/photo/photo4_2.png',
     name: '[슈슈]',
