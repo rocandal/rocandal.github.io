@@ -2,11 +2,13 @@ import React from 'react';
 import CountItem from './CountItem';
 
 const Count = ({ countItems }) => {
+  const modifiedCountItems = [...countItems.slice(1).reverse(), countItems[0]];
+
   return (
     <section className='count'>
       <h2 className='blind'>오늘의 카운트다운</h2>
       <ul className='count_list'>
-        {countItems.map((item, index) => (
+        {modifiedCountItems.map((item, index) => (
           <CountItem
             key={index}
             countData={item}

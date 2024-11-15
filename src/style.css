@@ -307,6 +307,8 @@ section img {
 
 .count_photo {
   position: absolute;
+  filter: drop-shadow(3px 3px 10px #000);
+  width: 50%;
 }
 
 .count_list li:nth-child(odd) .count_photo {
