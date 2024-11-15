@@ -139,7 +139,7 @@ const countItems = [
   {
     index: 15,
     title: '템포@펜리르',
-    countImage: 'img/count/count6_2.png',
+    countImage: 'img/count/count6_2.jpg',
     countPhoto: 'img/photo/photo6_2.png',
     name: '[먼지]',
     description: '먼지는이일을기억할것입니다',
