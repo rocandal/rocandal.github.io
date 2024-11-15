@@ -5,20 +5,14 @@ import Footer from './components/Footer';
 import Main from './components/Main';
 import TotalCount from './components/TotalCount';
 
-const App = ({ countItems }) => {
+const App = () => {
   return (
-    <div className='App'>
+    <div className="App">
       <Header />
       <Routes>
         {/* <Route path="/경로명" elemnet={<컴포넌트 />} /> */}
-        <Route
-          path='/'
-          element={<Main />}
-        />
-        <Route
-          path='/total'
-          element={<TotalCount countItems={countItems} />}
-        />
+        <Route path="/" element={<Main />} />
+        <Route path="/total" element={<TotalCount />} />
       </Routes>
       <Footer />
     </div>
