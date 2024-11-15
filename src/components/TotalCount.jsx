@@ -1,9 +1,9 @@
 import React from 'react';
 import CountItem from './CountItem';
-import countItem from '../constants/countItem';
+import countItems from '../constants/countItems';
 
 const TotalCount = () => {
-  const modifiedCountItems = [...countItem.slice(1).reverse(), countItem[0]];
+  const modifiedCountItems = [...countItems.slice(1).reverse(), countItems[0]];
 
   return (
     <section className="count">

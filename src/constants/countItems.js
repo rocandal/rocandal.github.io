@@ -7,6 +7,7 @@ const countItems = [
     countPhoto: '',
     name: '[세기말마크]',
     description: '황금에도 마크 같이.. 해줄 거지?',
+    date: '2024-11-19',
   },
   {
     index: 1,
@@ -15,6 +16,7 @@ const countItems = [
     countPhoto: 'img/photo/photo13_2.png',
     name: '[귤바구니]',
     description: '',
+    date: '2024-11-20',
   },
   {
     index: 2,
@@ -23,6 +25,7 @@ const countItems = [
     countPhoto: 'img/photo/photo13_1.png',
     name: '[크루]',
     description: '###채제작 온기팟 구함 1588_크루크루',
+    date: '2024-11-20',
   },
   {
     index: 3,
@@ -31,6 +34,7 @@ const countItems = [
     countPhoto: 'img/photo/photo12_2.png',
     name: '[여납]',
     description: '제노스 부활 기원 정권지르기 1일째',
+    date: '2024-11-21',
   },
   {
     index: 4,
@@ -39,6 +43,7 @@ const countItems = [
     countPhoto: 'img/photo/photo12_1.png',
     name: '[매화]',
     description: '제노스 꼬마친구 출시 기원 정권지르기 845일째.',
+    date: '2024-11-21',
   },
   {
     index: 5,
@@ -47,6 +52,7 @@ const countItems = [
     countPhoto: 'img/photo/photo11_2.png',
     name: '[가비]',
     description: "세기말마크 6기 D-365 Let's Go",
+    date: '2024-11-22',
   },
   {
     index: 6,
@@ -56,6 +62,7 @@ const countItems = [
     name: '[하루]',
     description:
       '항상 먼저 반갑게 인사해주셔서 너무 감사해요! 황금이 끝나갈 세기말에 저희 또 만나요! 그때까지 다들 건강 챙기기! 사랑합니다',
+    date: '2024-11-22',
   },
   {
     index: 7,
@@ -64,6 +71,7 @@ const countItems = [
     countPhoto: 'img/photo/photo10_2.png',
     name: '[서우]',
     description: '아, 온다. 황금... 온다.',
+    date: '2024-11-23',
   },
   {
     index: 8,
@@ -72,6 +80,7 @@ const countItems = [
     countPhoto: 'img/photo/photo10_1.png',
     name: '[비나]',
     description: '도비는 자유에요!',
+    date: '2024-11-23',
   },
   {
     index: 9,
@@ -80,6 +89,7 @@ const countItems = [
     countPhoto: 'img/photo/photo9_2.png',
     name: '[위니]',
     description: '',
+    date: '2024-11-24',
   },
   {
     index: 10,
@@ -88,6 +98,7 @@ const countItems = [
     countPhoto: 'img/photo/photo9_1.png',
     name: '[만듀]',
     description: '',
+    date: '2024-11-24',
   },
   {
     index: 11,
@@ -96,6 +107,7 @@ const countItems = [
     countPhoto: 'img/photo/photo8_2.png',
     name: '[하늘]',
     description: '',
+    date: '2024-11-25',
   },
   {
     index: 12,
@@ -104,6 +116,7 @@ const countItems = [
     countPhoto: 'img/photo/photo8_1.png',
     name: '[웅니의 룬아루]',
     description: '',
+    date: '2024-11-25',
   },
   {
     index: 13,
@@ -112,6 +125,7 @@ const countItems = [
     countPhoto: 'img/photo/photo7_2.png',
     name: '[선우현]',
     description: '7.0에 스샷 찍으러 다닐 사람 구함. 1/59',
+    date: '2024-11-26',
   },
   {
     index: 14,
@@ -120,6 +134,7 @@ const countItems = [
     countPhoto: 'img/photo/photo7_1.png',
     name: '[꼬질]',
     description: '7황금 와도 놀아주겠따고 약소캐...',
+    date: '2024-11-26',
   },
   {
     index: 15,
@@ -128,6 +143,7 @@ const countItems = [
     countPhoto: 'img/photo/photo6_2.png',
     name: '[먼지]',
     description: '먼지는이일을기억할것입니다',
+    date: '2024-11-27',
   },
   {
     index: 16,
@@ -137,6 +153,7 @@ const countItems = [
     name: '[셜리]',
     description:
       '이거 보여주려고 어그로 끌었다... 황금의 유산 염색 실화냐? 가슴이 웅장해진다...',
+    date: '2024-11-27',
   },
   {
     index: 17,
@@ -145,6 +162,7 @@ const countItems = [
     countPhoto: 'img/photo/photo5_2.png',
     name: '[시힐]',
     description: '',
+    date: '2024-11-28',
   },
   {
     index: 18,
@@ -153,6 +171,7 @@ const countItems = [
     countPhoto: 'img/photo/photo5_1.png',
     name: '[다프네]',
     description: '우리 경험한 적 없는 새로운 모험을 떠나자, 약속이야.',
+    date: '2024-11-28',
   },
   {
     index: 19,
@@ -162,6 +181,7 @@ const countItems = [
     name: '[슈슈]',
     description:
       '가좍들끼리 카운트다운을 기념한다는 건 행복한 일이더군요. 참여해주셔서 감사합니다^^ 즐겁게 작업했어요.',
+    date: '2024-11-29',
   },
   {
     index: 20,
@@ -171,6 +191,7 @@ const countItems = [
     name: '[나리]',
     description:
       '59년 동안 감사했고 앞으로 595959년이 지나서도 파판14와 마크 + 그 외 등등 게임 모두 (함께)재밌게 즐기면서 59하게 지내요~~ 황금의 유산 가보자긔~~',
+    date: '2024-11-29',
   },
   {
     index: 21,
@@ -179,6 +200,7 @@ const countItems = [
     countPhoto: 'img/photo/photo3_2.png',
     name: '[흑밀]',
     description: '전장 롤백 정권찌르기 1일차',
+    date: '2024-11-30',
   },
   {
     index: 22,
@@ -187,6 +209,7 @@ const countItems = [
     countPhoto: 'img/photo/photo3_1.png',
     name: '[단쨔]',
     description: '',
+    date: '2024-11-30',
   },
   {
     index: 23,
@@ -195,6 +218,7 @@ const countItems = [
     countPhoto: 'img/photo/photo2_2.png',
     name: '[덕지]',
     description: '세상 여코 내 뜻대로',
+    date: '2024-12-01',
   },
   {
     index: 24,
@@ -203,6 +227,7 @@ const countItems = [
     countPhoto: 'img/photo/photo2_1.png',
     name: '[휘건]',
     description: '여기 있는 사람 다 제 첩이에요.',
+    date: '2024-12-01',
   },
   {
     index: 25,
@@ -211,6 +236,7 @@ const countItems = [
     countPhoto: 'img/photo/photo1_2.png',
     name: '[보름]',
     description: '',
+    date: '2024-12-02',
   },
   {
     index: 26,
@@ -219,6 +245,7 @@ const countItems = [
     countPhoto: 'img/photo/photo1_1.png',
     name: '[생지]',
     description: '방갑습니다 쌩지입니다.',
+    date: '2024-12-02',
   },
 ];
 
