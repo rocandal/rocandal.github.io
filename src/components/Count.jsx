@@ -17,15 +17,9 @@ const Count = ({ countItems }) => {
 
     const formattedDate = now.toISOString().split('T')[0]; // 'YYYY-MM-DD'
 
-    // 2024년 11월 19일 이전인 경우 강제로 19일로 날짜 포맷
-    const todayYear = Number(formattedDate.split('-')[0]);
-    const todayMonth = Number(formattedDate.split('-')[1]);
-    const todayDay = Number(formattedDate.split('-')[2]);
-
+    // 오늘 날짜가 2024년 11월 19일 이전인 경우
     const todayDate =
-      todayYear === 2024 && todayMonth === 11 && todayDay <= 19
-        ? '2024-11-19'
-        : formattedDate;
+      formattedDate <= '2024-11-19' ? '2024-11-19' : formattedDate;
 
     setToday(todayDate);
   }, []);
