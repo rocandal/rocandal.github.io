@@ -320,7 +320,7 @@ section img {
 }
 
 .count_list li:nth-child(odd) .count_photo {
-  right: -200px;
+  right: -100px;
   bottom: -100px;
 }
 
@@ -429,7 +429,7 @@ section img {
 }
 
 .count_list li:nth-child(even) .count_photo {
-  left: -170px;
+  left: -70px;
   bottom: -100px;
 }
 
