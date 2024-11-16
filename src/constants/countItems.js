@@ -102,21 +102,21 @@ const countItems = [
   },
   {
     index: 11,
+    title: '룬아루@톤베리',
+    countImage: 'img/count/count8_1.png',
+    countPhoto: 'img/photo/photo8_1.png',
+    name: '[룬아루]',
+    description: '안녕! 로제라!',
+    date: '2024-11-25',
+  },
+  {
+    index: 12,
     title: "하늘하늘'@모그리",
     countImage: 'img/count/count8_2.png', // 일러 없음
     countPhoto: 'img/photo/photo8_2.png',
     name: '[하늘]',
     description:
       '백마여도 안 죄송한 황금의 유산으로 감 + 미술이 딜이 된다는 걸 보여주마',
-    date: '2024-11-25',
-  },
-  {
-    index: 12,
-    title: '룬아루@톤베리',
-    countImage: 'img/count/count8_1.png',
-    countPhoto: 'img/photo/photo8_1.png',
-    name: '[룬아루]',
-    description: '안녕! 로제라!',
     date: '2024-11-25',
   },
   {
