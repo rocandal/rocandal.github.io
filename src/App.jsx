@@ -6,7 +6,7 @@ import Main from './components/Main';
 import TotalCount from './components/TotalCount';
 import { useEffect } from 'react';
 
-const App = () => {
+function RedirectHandler() {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -15,17 +15,24 @@ const App = () => {
 
     if (redirectPath) navigate(redirectPath, { replace: true });
   }, [navigate]);
-  
+
+  return null;
+}
+
+const App = () => {
   return (
-    <div className="App">
-      <Header />
-      <Routes>
-        {/* <Route path="/경로명" elemnet={<컴포넌트 />} /> */}
-        <Route path="/" element={<Main />} />
-        <Route path="/total" element={<TotalCount />} />
-      </Routes>
-      <Footer />
-    </div>
+    <>
+      <RedirectHandler />
+      <div className="App">
+        <Header />
+        <Routes>
+          {/* <Route path="/경로명" elemnet={<컴포넌트 />} /> */}
+          <Route path="/" element={<Main />} />
+          <Route path="/total" element={<TotalCount />} />
+        </Routes>
+        <Footer />
+      </div>
+    </>
   );
 };
 
