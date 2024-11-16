@@ -196,7 +196,7 @@ section img {
 .visual::after {
   content: '';
   position: absolute;
-  left: 641%;
+  left: 64%;
   bottom: 0;
   display: block;
   width: calc(671px * 2 / 3);
