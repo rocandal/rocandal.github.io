@@ -6,7 +6,7 @@ const countItems = [
     countImage: 'img/count/count14_1.png',
     countPhoto: 'img/photo/photo0_1.png',
     name: '[로제라]',
-    description: '마크 계속 같이.. 해줄 거지?',
+    description: '황금에도\n마크 계속 같이...\n\n해줄 거지?',
     date: '2024-11-19',
   },
   {
@@ -61,7 +61,7 @@ const countItems = [
     countImage: 'img/count/count11_2.png',
     countPhoto: 'img/photo/photo11_2.png',
     name: '[가비]',
-    description: "세기말마크 6기 D-365\nLet's Go",
+    description: "세기말마크 6기 D-365\n\nLet's Go",
     date: '2024-11-22',
   },
   {
