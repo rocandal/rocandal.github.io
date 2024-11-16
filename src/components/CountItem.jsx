@@ -2,7 +2,9 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const CountItem = ({ countData }) => {
   const [isShort, setIsShort] = useState(false);
+  const [isOn, setIsOn] = useState(false);
   const imgRef = useRef(null);
+  const liRef = useRef(null);
 
   const handleImageLoad = () => {
     if (imgRef.current) {
@@ -13,6 +15,33 @@ const CountItem = ({ countData }) => {
       }
     }
   };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsOn(true);
+          }
+        });
+      },
+      {
+        root: null, // viewport 기준
+        rootMargin: '150px', // 이 값을 조절해서 몇 픽셀 전에 동작할지 결정
+        threshold: 0.1, // 요소가 보이는 비율
+      }
+    );
+
+    if (liRef.current) {
+      observer.observe(liRef.current);
+    }
+
+    return () => {
+      if (liRef.current) {
+        observer.unobserve(liRef.current);
+      }
+    };
+  }, []);
 
   const getDecoImages = (index) => {
     if (index % 2 === 0) {
@@ -46,11 +75,14 @@ const CountItem = ({ countData }) => {
   const textImage = getTextImage(countData.index);
 
   return (
-    <li className={isShort ? 'short' : ''}>
-      <div className='deco1 deco'>
+    <li
+      ref={liRef}
+      className={`${isShort ? 'short' : ''} ${isOn ? 'on' : ''}`}
+    >
+      <div className='deco1 deco '>
         <img src={decoImages.deco1} />
       </div>
-      <div className='deco2 deco'>
+      <div className='deco2 deco decoRotate'>
         <img src={decoImages.deco2} />
       </div>
       <div className='img_sec'>

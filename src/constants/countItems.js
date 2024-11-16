@@ -21,10 +21,10 @@ const countItems = [
   {
     index: 2,
     title: '귤바구니@모그리',
-    countImage: 'img/count/count14_1.png', // 일러없음
+    countImage: 'img/count/count13_2.png',
     countPhoto: 'img/photo/photo13_2.png',
     name: '[귤바구니]',
-    description: '',
+    description: '기다리고 기다려왔다!',
     date: '2024-11-20',
   },
   {

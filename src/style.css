@@ -278,6 +278,14 @@ section img {
   align-items: flex-end;
   padding: 10rem 0;
   margin: 5rem 0 15rem;
+  top: 300px;
+  transition: 0.7s;
+  opacity: 0;
+}
+
+.count_list li.on {
+  top: 0;
+  opacity: 1;
 }
 
 .count h3 {
@@ -313,6 +321,18 @@ section img {
   position: absolute;
   filter: drop-shadow(3px 3px 10px #000);
   z-index: 3;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.count_photo:hover {
+  scale: 0.9;
+}
+
+.count_list li.on .count_photo {
+  opacity: 1;
+  transition: 0.5s;
+  transition-delay: 0.5s;
 }
 
 .count_text {
@@ -320,8 +340,11 @@ section img {
 }
 
 .count_list li:nth-child(odd) .count_photo {
-  right: -100px;
+  right: -500px;
   bottom: -100px;
+}
+.count_list li.on:nth-child(odd) .count_photo {
+  right: -100px;
 }
 
 .count_list .text_sec {
@@ -350,6 +373,19 @@ section img {
 }
 
 /* deco */
+
+@keyframes decoRotate {
+  0% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+.decoRotate {
+  animation: decoRotate 2s infinite alternate;
+}
 
 .count_list .img_sec .deco + div:not(.deco) {
   position: relative;
@@ -429,8 +465,12 @@ section img {
 }
 
 .count_list li:nth-child(even) .count_photo {
-  left: -70px;
+  left: -500px;
   bottom: -100px;
+}
+
+.count_list li.on:nth-child(even) .count_photo {
+  left: -70px;
 }
 
 .count_list li:nth-child(even) .deco1 {
