@@ -1,4 +1,5 @@
-const { useState, useEffect } = require('react');
+import '../style/loading.css';
+import { useState, useEffect } from 'react';
 
 const ImageLoader = () => {
   const [isLoading, setIsLoading] = useState(true);

@@ -1,0 +1,13 @@
+.loading_screen {
+  position: fixed; /* 화면에 고정 */
+  top: 0;
+  left: 0;
+  width: 100%; /* 전체 화면 가로 */
+  height: 100%; /* 전체 화면 세로 */
+  background-color: rgba(255, 255, 255, 0.9); /* 반투명 배경색 */
+  display: flex;
+  justify-content: center; /* 중앙 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  z-index: 9999; /* 다른 요소들 위에 표시 */
+  font-size: 2rem; /* 텍스트 크기 */
+}
