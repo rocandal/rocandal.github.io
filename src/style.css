@@ -89,6 +89,7 @@ body {
   background: url('../public/img/D1/background.jpg') repeat;
   /* background: #fbfbfb; */
   /* background: url(img/D1/background_1.jpg) repeat; */
+  min-width: 1900px;
 }
 
 :root {
@@ -134,6 +135,7 @@ header {
   padding: 0 1rem;
   width: 100%;
   z-index: 9999;
+  min-width: 1900px;
 }
 
 .inner {
@@ -174,10 +176,6 @@ header nav:hover::after {
   width: 75%;
 }
 
-main {
-  min-width: 1900px;
-}
-
 main .inner {
   flex-direction: column;
 }
@@ -198,7 +196,7 @@ section img {
 .visual::after {
   content: '';
   position: absolute;
-  left: 65%;
+  left: 641%;
   bottom: 0;
   display: block;
   width: calc(671px * 2 / 3);
@@ -235,7 +233,7 @@ section img {
 .visual_logo::after {
   content: '';
   position: absolute;
-  right: -450px;
+  right: -400px;
   bottom: -370px;
   display: block;
   width: calc(613px * 3 / 5);
@@ -515,6 +513,7 @@ footer {
   color: var(--color-gray2);
   padding: 80px 0;
   text-align: center;
+  min-width: 1900px;
 }
 
 footer .inner {
