@@ -1,0 +1,7 @@
+<script type="text/javascript">
+  // Redirect all routes to index.html for React SPA
+  var path = window.location.pathname;
+  if (path !== '/' && !path.endsWith('.html')) {
+    window.location.replace('/total' + path);
+  }
+</script>
