@@ -67,14 +67,14 @@ const MusicPlayer = () => {
   }, [currentTrack, isPlaying, tracks]);
 
   return (
-    <div className="music_player">
-      <div className="music_button_container">
+    <div className='music_player'>
+      <div className='music_button_container'>
         <button onClick={handlePrevious}>◁</button>
         <button onClick={handlePlayPause}>{isPlaying ? '⏸︎' : '▶️'}</button>
         <button onClick={handleNext}>▷</button>
       </div>
-      <div className="music_inform_container">
-        <div className="music_title">
+      <div className='music_inform_container'>
+        <div className='music_title'>
           <span>
             {isPlaying ? tracks[currentTrack].title : '재생 버튼을 눌러주세요.'}
           </span>

@@ -4,7 +4,7 @@ const countItems = [
     index: 0,
     title: '세기말마크 3,4,5기',
     countImage: 'img/count/count14_1.png',
-    countPhoto: '',
+    countPhoto: 'img/photo/photo0_1.png',
     name: '[로제라]',
     description: '황금에도 마크 같이.. 해줄 거지?',
     date: '2024-11-19',
@@ -85,37 +85,38 @@ const countItems = [
   {
     index: 9,
     title: '위니클로버@톤베리',
-    countImage: 'img/count/count14_1.png', // 일러 없음
+    countImage: 'img/count/count9_2.png',
     countPhoto: 'img/photo/photo9_2.png',
     name: '[위니]',
-    description: '',
+    description: '황금이 와도 당신만이 나애 첟사랑, 나애 끗 사랑',
     date: '2024-11-24',
   },
   {
     index: 10,
     title: '죄멸@톤베리',
-    countImage: 'img/count/count14_1.png', // 일러 없음
+    countImage: 'img/count/count9_1.png',
     countPhoto: 'img/photo/photo9_1.png',
     name: '[만듀]',
-    description: '',
+    description: '만듀튀김. 머리에 붙어 있었어. ㅇ//////ㅇ',
     date: '2024-11-24',
   },
   {
     index: 11,
     title: "하늘하늘'@모그리",
-    countImage: 'img/count/count14_1.png', // 일러 없음
+    countImage: 'img/count/count8_2.png', // 일러 없음
     countPhoto: 'img/photo/photo8_2.png',
     name: '[하늘]',
-    description: '',
+    description:
+      '백마여도 안 죄송한 황금의 유산으로 감 + 미술이 딜이 된다는 걸 보여주마',
     date: '2024-11-25',
   },
   {
     index: 12,
     title: '룬아루@톤베리',
-    countImage: 'img/count/count14_1.png', // 일러 없음
+    countImage: 'img/count/count8_1.png',
     countPhoto: 'img/photo/photo8_1.png',
     name: '[룬아루]',
-    description: '',
+    description: '안녕! 로제라!',
     date: '2024-11-25',
   },
   {
@@ -158,10 +159,10 @@ const countItems = [
   {
     index: 17,
     title: '시힐@초코보',
-    countImage: 'img/count/count14_1.png', // 일러 없음
+    countImage: 'img/count/count5_2.png',
     countPhoto: 'img/photo/photo5_2.png',
     name: '[시힐]',
-    description: '',
+    description: '황금에도 함께 같이 놀아요',
     date: '2024-11-28',
   },
   {
@@ -176,7 +177,7 @@ const countItems = [
   {
     index: 19,
     title: '슈슈@펜리르 | 커미션 ⓒ익명',
-    countImage: 'img/count/count14_1.png', // 일러 없음
+    countImage: 'img/count/count4_2.png',
     countPhoto: 'img/photo/photo4_2.png',
     name: '[슈슈]',
     description:
@@ -232,19 +233,19 @@ const countItems = [
   {
     index: 25,
     title: '닭갈비볶음밥마스터@카벙클',
-    countImage: 'img/count/count14_1.png', // 일러 없음
+    countImage: 'img/count/count1_2.png',
     countPhoto: 'img/photo/photo1_2.png',
     name: '[보름]',
-    description: '',
+    description: '이 스샷을 슈x님에게 바칩니다',
     date: '2024-12-02',
   },
   {
     index: 26,
     title: 'SandG@카벙클',
-    countImage: 'img/count/count14_1.png', // 일러 없음
+    countImage: 'img/count/count1_1.png',
     countPhoto: 'img/photo/photo1_1.png',
     name: '[생지]',
-    description: '방갑습니다 쌩지입니다.',
+    description: '아이테리스와 기타와 여코테... 아름답지 않나요?',
     date: '2024-12-02',
   },
 ];

@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const CountItem = ({ countData }) => {
+  const [isShort, setIsShort] = useState(false);
+  const imgRef = useRef(null);
+
+  const handleImageLoad = () => {
+    if (imgRef.current) {
+      const imgHeight = imgRef.current.clientHeight;
+      // 이미지 높이가 1150px보다 작으면 'Short' 클래스 추가
+      if (imgHeight < 1150) {
+        setIsShort(true);
+      }
+    }
+  };
+
   const getDecoImages = (index) => {
-    if (index % 2 === 1) {
+    if (index % 2 === 0) {
       // 홀수일 때
       return {
         deco1: 'img/D1/d1R-3.png',
@@ -14,13 +27,13 @@ const CountItem = ({ countData }) => {
       return {
         deco1: 'img/D2/d2L-6.png',
         deco2: 'img/D2/d2L-4.png',
-        deco3: 'img/D2/d2L-3.png',
+        deco3: 'img/D2/d2R-3.png',
       };
     }
   };
 
   const getTextImage = (index) => {
-    if (index % 2 === 1) {
+    if (index % 2 === 0) {
       // 홀수일 때
       return 'img/D1/d1R-1.png';
     } else {
@@ -33,38 +46,28 @@ const CountItem = ({ countData }) => {
   const textImage = getTextImage(countData.index);
 
   return (
-    <li>
+    <li className={isShort ? 'short' : ''}>
       <div className='deco1 deco'>
-        <img
-          src={decoImages.deco1}
-          alt='deco1'
-        />
+        <img src={decoImages.deco1} />
       </div>
       <div className='deco2 deco'>
-        <img
-          src={decoImages.deco2}
-          alt='deco2'
-        />
+        <img src={decoImages.deco2} />
       </div>
       <div className='img_sec'>
         <h3>{countData.title}</h3>
         <div className='deco3 deco'>
-          <img
-            src={decoImages.deco3}
-            alt='deco3'
-          />
+          <img src={decoImages.deco3} />
         </div>
         <div className='count_img'>
           <img
+            ref={imgRef}
             src={countData.countImage}
             alt='카운트다운 이미지'
+            onLoad={handleImageLoad}
           />
         </div>
         <div className='count_photo'>
-          <img
-            src={countData.countPhoto}
-            alt='카운트다운 사진'
-          />
+          <img src={countData.countPhoto} />
         </div>
       </div>
       <div className='text_sec'>
