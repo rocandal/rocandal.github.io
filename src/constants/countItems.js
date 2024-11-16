@@ -15,7 +15,7 @@ const countItems = [
     countImage: 'img/count/count13_1.png',
     countPhoto: 'img/photo/photo13_1.png',
     name: '[크루]',
-    description: '###채제작 온기팟 구함 1588_크루크루',
+    description: '###채제작 온기팟 구함\n1588_크루크루',
     date: '2024-11-20',
   },
   {
@@ -33,7 +33,7 @@ const countItems = [
     countImage: 'img/count/count14_1.png', // 일러 없음
     countPhoto: 'img/photo/photo12_2.png',
     name: '[여납]',
-    description: '제노스 부활 기원 정권지르기 1일째',
+    description: '제노스 부활 기원\n정권지르기 1일째',
     date: '2024-11-21',
   },
   {
@@ -42,7 +42,7 @@ const countItems = [
     countImage: 'img/count/count12_1.png',
     countPhoto: 'img/photo/photo12_1.png',
     name: '[매화]',
-    description: '제노스 꼬마친구 출시 기원 정권지르기 845일째.',
+    description: '제노스 꼬마친구 출시 기원\n정권지르기 845일째',
     date: '2024-11-21',
   },
   {
@@ -52,7 +52,7 @@ const countItems = [
     countPhoto: 'img/photo/photo11_1.png',
     name: '[하루]',
     description:
-      '항상 먼저 반갑게 인사해주셔서 너무 감사해요! 황금이 끝나갈 세기말에 저희 또 만나요! 그때까지 다들 건강 챙기기! 사랑합니다',
+      '항상 먼저 반갑게 인사해\n주셔서 너무 감사해요!\n황금이 끝나갈 세기말에\n저희 또 만나요!\n그때까지 다들 건강 챙기기!\n사랑합니다',
     date: '2024-11-22',
   },
   {
@@ -61,7 +61,7 @@ const countItems = [
     countImage: 'img/count/count11_2.png',
     countPhoto: 'img/photo/photo11_2.png',
     name: '[가비]',
-    description: "세기말마크 6기 D-365 Let's Go",
+    description: "세기말마크 6기 D-365\nLet's Go",
     date: '2024-11-22',
   },
   {
@@ -70,7 +70,7 @@ const countItems = [
     countImage: 'img/count/count10_2.png',
     countPhoto: 'img/photo/photo10_2.png',
     name: '[서우]',
-    description: '아, 온다. 황금... 온다.',
+    description: '아, 온다.\n황금... 온다.',
     date: '2024-11-23',
   },
   {
@@ -88,7 +88,7 @@ const countItems = [
     countImage: 'img/count/count9_2.png',
     countPhoto: 'img/photo/photo9_2.png',
     name: '[위니]',
-    description: '황금이 와도 당신만이 나애 첟사랑, 나애 끗 사랑',
+    description: '황금이 와도 당신만이\n나애 첟사랑,\n나애 끗 사랑',
     date: '2024-11-24',
   },
   {
@@ -97,7 +97,7 @@ const countItems = [
     countImage: 'img/count/count9_1.png',
     countPhoto: 'img/photo/photo9_1.png',
     name: '[만듀]',
-    description: '만듀튀김. 머리에 붙어 있었어. ㅇ//////ㅇ',
+    description: '만듀튀김.\n머리에 붙어 있었어.\nㅇ//////ㅇ',
     date: '2024-11-24',
   },
   {
@@ -116,7 +116,7 @@ const countItems = [
     countPhoto: 'img/photo/photo8_2.png',
     name: '[하늘]',
     description:
-      '백마여도 안 죄송한 황금의 유산으로 감 + 미술이 딜이 된다는 걸 보여주마',
+      '백마여도 안 죄송한\n황금의 유산으로 감\n+\n미술이 딜이 된다는 걸\n보여주마',
     date: '2024-11-25',
   },
   {
@@ -125,7 +125,7 @@ const countItems = [
     countImage: 'img/count/count7_2.png',
     countPhoto: 'img/photo/photo7_2.png',
     name: '[선우현]',
-    description: '7.0에 스샷 찍으러 다닐 사람 구함. 1/59',
+    description: '7.0에 스샷 찍으러\n다닐 사람 구함.\n\n1/59',
     date: '2024-11-26',
   },
   {
@@ -134,7 +134,7 @@ const countItems = [
     countImage: 'img/count/count7_1.png',
     countPhoto: 'img/photo/photo7_1.png',
     name: '[꼬질]',
-    description: '황금 와도 놀아주겠따고 약소캐...',
+    description: '황금 와도\n놀아주겠따고 약소캐...',
     date: '2024-11-26',
   },
   {
@@ -153,7 +153,7 @@ const countItems = [
     countPhoto: 'img/photo/photo6_1.png',
     name: '[셜리]',
     description:
-      '이거 보여주려고 어그로 끌었다... 황금의 유산 염색 실화냐? 가슴이 웅장해진다...',
+      '이거 보여주려고\n어그로 끌었다...\n황금의 유산 염색 실화냐?\n가슴이 웅장해진다...',
     date: '2024-11-27',
   },
   {
@@ -162,7 +162,7 @@ const countItems = [
     countImage: 'img/count/count5_1.png',
     countPhoto: 'img/photo/photo5_1.png',
     name: '[다프네]',
-    description: '우리 경험한 적 없는 새로운 모험을 떠나자, 약속이야.',
+    description: '우리 경험한 적 없는\n새로운 모험을 떠나자,\n약속이야.',
     date: '2024-11-28',
   },
   {
@@ -181,7 +181,7 @@ const countItems = [
     countPhoto: 'img/photo/photo4_2.png',
     name: '[슈슈]',
     description:
-      '가좍들끼리 카운트다운을 기념한다는 건 행복한 일이더군요. 참여해주셔서 감사합니다^^ 즐겁게 작업했어요.',
+      '가좍들끼리\n카운트다운을 기념한다는 건\n행복한 일이더군요.\n참여해주셔서 감사합니다^^\n즐겁게 작업했어요.',
     date: '2024-11-29',
   },
   {
@@ -200,7 +200,7 @@ const countItems = [
     countImage: 'img/count/count3_2.png',
     countPhoto: 'img/photo/photo3_2.png',
     name: '[흑밀]',
-    description: '전장 롤백 정권찌르기 1일차',
+    description: '전장 롤백\n정권찌르기 1일차',
     date: '2024-11-30',
   },
   {
@@ -227,7 +227,7 @@ const countItems = [
     countImage: 'img/count/count2_1.png',
     countPhoto: 'img/photo/photo2_1.png',
     name: '[휘건]',
-    description: '여기 있는 사람 다 제 첩이에요.',
+    description: '여기 있는 사람\n다 제 첩이에요.',
     date: '2024-12-01',
   },
   {
@@ -236,7 +236,7 @@ const countItems = [
     countImage: 'img/count/count1_2.png',
     countPhoto: 'img/photo/photo1_2.png',
     name: '[보름]',
-    description: '이 스샷을 슈x님에게 바칩니다',
+    description: '이 스샷을\n슈x님에게 바칩니다',
     date: '2024-12-02',
   },
   {
@@ -245,7 +245,7 @@ const countItems = [
     countImage: 'img/count/count1_1.png',
     countPhoto: 'img/photo/photo1_1.png',
     name: '[생지]',
-    description: '아이테리스와 기타와 여코테... 아름답지 않나요?',
+    description: '아이테리스와\n기타와 여코테...\n아름답지 않나요?',
     date: '2024-12-02',
   },
 ];

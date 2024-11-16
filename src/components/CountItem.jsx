@@ -75,38 +75,42 @@ const CountItem = ({ countData }) => {
   const textImage = getTextImage(countData.index);
 
   return (
-    <li
-      ref={liRef}
-      className={`${isShort ? 'short' : ''} ${isOn ? 'on' : ''}`}
-    >
-      <div className='deco1 deco '>
+    <li ref={liRef} className={`${isShort ? 'short' : ''} ${isOn ? 'on' : ''}`}>
+      <div className="deco1 deco ">
         <img src={decoImages.deco1} />
       </div>
-      <div className='deco2 deco decoRotate'>
+      <div className="deco2 deco decoRotate">
         <img src={decoImages.deco2} />
       </div>
-      <div className='img_sec'>
+      <div className="img_sec">
         <h3>{countData.title}</h3>
-        <div className='deco3 deco'>
+        <div className="deco3 deco">
           <img src={decoImages.deco3} />
         </div>
-        <div className='count_img'>
+        <div className="count_img">
           <img
             ref={imgRef}
             src={countData.countImage}
-            alt='카운트다운 이미지'
+            alt="카운트다운 이미지"
             onLoad={handleImageLoad}
           />
         </div>
-        <div className='count_photo'>
+        <div className="count_photo">
           <img src={countData.countPhoto} />
         </div>
       </div>
-      <div className='text_sec'>
+      <div className="text_sec">
         <img src={textImage} />
-        <div className='count_text'>
+        <div className="count_text">
           <h4>{countData.name}</h4>
-          <p>{countData.description}</p>
+          <p>
+            {countData.description.split('\n').map((line, index) => (
+              <span key={index}>
+                {line}
+                <br />
+              </span>
+            ))}
+          </p>
         </div>
       </div>
     </li>
