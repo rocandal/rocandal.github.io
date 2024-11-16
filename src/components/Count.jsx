@@ -25,7 +25,7 @@ const Count = ({ countItems }) => {
   }, []);
 
   return (
-    <section className="count">
+    <section className="count inner">
       <h2 className="blind">오늘의 카운트다운</h2>
       <ul className="count_list">
         {todayCountItems.map((item, index) => (
