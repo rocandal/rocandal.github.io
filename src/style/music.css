@@ -6,22 +6,22 @@
 
 .music_button_container {
   display: flex;
+  width: 180px;
 }
 
 .music_button_container > button {
-  color: var(--color-white);
-  padding-bottom: 4px;
+  padding: 4px 0;
 }
 
 .music_button_container > button:not(:first-child) {
-  margin-left: 16px;
+  margin-left: 20px;
 }
 
 .music_inform_container {
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
-  margin: auto 0 auto 16px;
+  margin: auto 0 auto 20px;
 }
 
 .music_title {
