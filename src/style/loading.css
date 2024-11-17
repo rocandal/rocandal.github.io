@@ -1,13 +1,20 @@
 .loading_screen {
-  position: fixed; /* 화면에 고정 */
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* 전체 화면 가로 */
-  height: 100%; /* 전체 화면 세로 */
-  background-color: rgba(255, 255, 255, 0.9); /* 반투명 배경색 */
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
   display: flex;
-  justify-content: center; /* 중앙 정렬 */
-  align-items: center; /* 세로 중앙 정렬 */
-  z-index: 9999; /* 다른 요소들 위에 표시 */
-  font-size: 2rem; /* 텍스트 크기 */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.loading_screen.fade_out {
+  opacity: 0;
+  pointer-events: none;
 }
