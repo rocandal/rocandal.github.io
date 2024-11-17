@@ -29,8 +29,8 @@ const countItems = [
   },
   {
     index: 3,
-    title: '유럽연합@초코보',
-    countImage: 'img/count/count14_1.png', // 일러 없음
+    title: '유럽연합@초코보 | 커미션 ⓒ지안(@jian167)',
+    countImage: 'img/count/count12_2.png', // 일러 없음
     countPhoto: 'img/photo/photo12_2.png',
     name: '[여납]',
     description: '제노스 부활 기원\n정권지르기 1일째',
@@ -38,7 +38,7 @@ const countItems = [
   },
   {
     index: 4,
-    title: '매화님@모그리 | 커미션 ⓒ지안(@jian167)',
+    title: '매화님@모그리 | 커미션 ⓒ눈덩(@snowdoc)',
     countImage: 'img/count/count12_1.png',
     countPhoto: 'img/photo/photo12_1.png',
     name: '[매화]',
@@ -70,7 +70,8 @@ const countItems = [
     countImage: 'img/count/count10_2.png',
     countPhoto: 'img/photo/photo10_2.png',
     name: '[서우]',
-    description: '아, 온다.\n황금... 온다.',
+    description:
+      '요시다가 가로되,\n황금이 남코테를\n버리지 아니하였으니\n곧 남코테가 늘어날지어다.\n\n- 파판복음 12장 34절',
     date: '2024-11-23',
   },
   {
