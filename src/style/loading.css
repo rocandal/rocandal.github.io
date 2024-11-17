@@ -7,7 +7,6 @@
 }
 
 .loading_screen {
-  font-family: 'HakgyoansimNadeuriTTF-B';
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -34,7 +33,13 @@
   width: 10%;
 }
 
-.loading_screen > div {
-  font-size: var(--text-2xl);
+.loading_text {
+  font-family: 'HakgyoansimNadeuriTTF-B';
+  font-size: 3em;
   text-shadow: -2px 0px gray, 0px 2px gray, 2px 0px gray, 0px -2px gray;
+  margin-bottom: 16px;
+}
+
+.recommend_text {
+  color: gray;
 }

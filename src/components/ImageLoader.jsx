@@ -35,7 +35,10 @@ const ImageLoader = ({ onLoadingComplete }) => {
   return isLoading ? (
     <div className={`loading_screen ${isFadingOut ? 'fade_out' : ''}`}>
       <img src="img/loading.gif" alt="로딩 이미지" />
-      <div>출항 준비 중...</div>
+      <div className="loading_text">출항 준비 중...</div>
+      <div className="recommend_text">
+        PC 환경에서의 사용(가로 1920px 이상)을 권장합니다.
+      </div>
     </div>
   ) : null;
 };
