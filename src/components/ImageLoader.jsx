@@ -34,7 +34,8 @@ const ImageLoader = ({ onLoadingComplete }) => {
 
   return isLoading ? (
     <div className={`loading_screen ${isFadingOut ? 'fade_out' : ''}`}>
-      로딩 중...
+      <img src="img/loading.gif" alt="로딩 이미지" />
+      <div>출항 준비 중...</div>
     </div>
   ) : null;
 };
