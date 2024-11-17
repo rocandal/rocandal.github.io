@@ -30,7 +30,7 @@ const countItems = [
   {
     index: 3,
     title: '유럽연합@초코보 | 커미션 ⓒ지안(@jian167)',
-    countImage: 'img/count/count12_2.png', // 일러 없음
+    countImage: 'img/count/count12_2.png',
     countPhoto: 'img/photo/photo12_2.png',
     name: '[여납]',
     description: '제노스 부활 기원\n정권지르기 1일째',
@@ -113,7 +113,7 @@ const countItems = [
   {
     index: 12,
     title: "하늘하늘'@모그리",
-    countImage: 'img/count/count8_2.png', // 일러 없음
+    countImage: 'img/count/count8_2.png',
     countPhoto: 'img/photo/photo8_2.png',
     name: '[하늘]',
     description:
@@ -210,7 +210,7 @@ const countItems = [
     countImage: 'img/count/count3_1.png',
     countPhoto: 'img/photo/photo3_1.png',
     name: '[단쨔]',
-    description: '',
+    description: '황금의 유산이라고요...?\n제가 한 번 먹어보겠습니다.',
     date: '2024-11-30',
   },
   {
