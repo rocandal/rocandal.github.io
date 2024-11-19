@@ -11,7 +11,7 @@ const countItems = [
   },
   {
     index: 1,
-    title: '크루@초코보',
+    title: "크루'@초코보",
     countImage: 'img/count/count13_1.png',
     countPhoto: 'img/photo/photo13_1.png',
     name: '[크루]',
