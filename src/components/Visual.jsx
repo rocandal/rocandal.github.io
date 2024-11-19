@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import useLoading from '../hooks/useLoading';
 
-const Visual = ({ isLoaded }) => {
+const Visual = () => {
+  const { isLoaded } = useLoading();
   const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {

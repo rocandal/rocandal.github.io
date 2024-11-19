@@ -8,8 +8,6 @@ const formatDate = () => {
   const todayDate =
     formattedDate <= '2024-11-19' ? '2024-11-19' : formattedDate;
 
-    console.log(formattedDate)
-
   return todayDate;
 };
 
