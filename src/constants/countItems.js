@@ -224,7 +224,7 @@ const countItems = [
   },
   {
     index: 24,
-    title: '휘건@모그리',
+    title: '휘건@톤베리',
     countImage: 'img/count/count2_1.png',
     countPhoto: 'img/photo/photo2_1.png',
     name: '[휘건]',
